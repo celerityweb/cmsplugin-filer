@@ -37,7 +37,7 @@ class FilerImage(CMSPlugin):
     style = models.CharField(
         _('Style'), choices=STYLE_CHOICES, default=DEFAULT_STYLE, max_length=50, blank=True)
     caption_text = models.CharField(_("caption text"), null=True, blank=True, max_length=255)
-    caption_alignment = models.CharField(_("image alignment"), max_length=10, blank=True, null=True, choices=CAPTION_CHOICES)
+    caption_alignment = models.CharField(_("caption alignment"), max_length=10, blank=True, null=True, choices=CAPTION_CHOICES)
     image = FilerImageField(
         null=True,
         blank=True,
